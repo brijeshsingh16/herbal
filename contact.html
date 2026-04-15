@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Herbalife</title>
+
+		<!--============================ Bootstrap CSS =======================-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	  
+		<!--=============== My CSS =================-->
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!--=========================== Font Awesome =====================-->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+	</head>
+	
+	<body>
+
+		<!--=============================== NAVBAR ===============================-->
+		<header>
+			<nav class="navbar navbar-expand-lg">
+			  <div class="container">
+				<a class="navbar-brand" href="index.html"><i class="fa-solid fa-leaf"></i> HERBALIFE</a>
+
+				<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+				  <ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+					  <a class="nav-link" href="index.html#home"><i class="fa-solid fa-house"></i> Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="products.html#products"><i class="fa-solid fa-capsules"></i> Products</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="about.html#about"><i class="fa-solid fa-circle-info"></i> About</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="contact.html#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+					</li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+		</header>
+		
+		<!-- ================= CONTACT SECTION ================= -->
+		<main>
+			<section id="contact" class="py-5 bg-light">
+				<div class="container">
+
+					<div class="text-center mb-5">
+						<h2 class="fw-bold">Contact Us</h2>
+						<p class="text-muted">We’d love to hear from you. Fill out the form below.</p>
+					</div>
+
+					<div class="row justify-content-center">
+
+						<div class="col-md-8">
+
+							<div class="card shadow-sm border-0">
+								<div class="card-body p-4">
+
+									<form id="contactForm" onsubmit="sendToWhatsApp(event)">
+
+										<div class="mb-3">
+											<label for="name" class="form-label">Full Name</label>
+											<input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+										</div>
+
+										<div class="mb-3">
+											<label for="email" class="form-label">Email Address</label>
+											<input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+										</div>
+
+										<div class="mb-3">
+											<label for="phone" class="form-label">Phone Number</label>
+											<input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" maxlength="10"  pattern="[0-9]{10}" title="Enter 10 digit number" required>
+										</div>
+
+										<div class="mb-3">
+											<label for="problem" class="form-label">Problem</label>
+											<input type="text" id="problem" class="form-control" placeholder="Enter problem" required>
+										</div>
+
+										<div class="mb-3">
+											<label for="message" class="form-label">Message</label>
+											<textarea id="message" class="form-control" rows="5" placeholder="Write your message..." required></textarea>
+										</div>
+
+										<div class="text-center">
+											<button type="submit" class="btn btn-success px-4">
+												<i class="fa-solid fa-paper-plane"></i> Send Message
+											</button>
+										</div>
+
+									</form>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		
+		<!--============================== FOOTER ===================================-->
+		<footer class="footer">
+		  <div class="container">
+			<div class="row">
+
+			  <!--================================ Company =========================-->
+			  <div class="col-md-4">
+				<h5><i class="fa-solid fa-leaf"></i> Herbalife</h5>
+				<p>Empowering healthy living through nutrition, fitness, and wellness products worldwide.</p>
+			  </div>
+
+			  <!--==================================== Links ================================-->
+			  <div class="col-md-4">
+				<h5><i class="fa-solid fa-link"></i> Quick Links</h5>
+				<a href="index.html#home"><i class="fa-solid fa-house"></i> Home</a>
+				<a href="products.html#products"><i class="fa-solid fa-capsules"></i> Products</a>
+				<a href="about.html#about"><i class="fa-solid fa-circle-info"></i> About Us</a>
+				<a href="contact.html#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+			  </div>
+
+			  <!--================================= Contact ===============================-->
+			  <div class="col-md-4">
+				  <h5><i class="fa-solid fa-address-book"></i> Contact</h5>
+
+				  <a href="mailto:1780brs@gmail.com">
+					<i class="fa-solid fa-envelope"></i> 1780brs@gmail.com
+				  </a>
+
+				  <a href="tel:+917376874710">
+					<i class="fa-solid fa-phone"></i> +91 7376874710
+				  </a>
+
+				  <a href="tel:+919140987925">
+					<i class="fa-solid fa-phone"></i> +91 9140987925
+				  </a>
+
+				  <a href="https://www.google.com/maps/place/India">
+					<i class="fa-solid fa-location-dot"></i> India
+				  </a>
+				</div>
+
+			</div>
+
+			<!--================================= Bottom ====================================-->
+			<div class="footer-bottom">
+			  <p>&copy; 2026 Herbalife. All Rights Reserved.</p>
+			</div>
+		  </div>
+		</footer>
+
+		<!--========================== Bootstrap JS =========================-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<!--===================== Send Message to Whatsapp ========================-->
+		<script>
+			function sendToWhatsApp(e) 
+			{
+				e.preventDefault();
+
+				let name = document.getElementById("name").value.trim();
+				let email = document.getElementById("email").value.trim();
+				let phone = document.getElementById("phone").value.trim();
+				let problem = document.getElementById("problem").value.trim();
+				let message = document.getElementById("message").value.trim();
+
+				const whatsappNumber = "917376874710";
+
+				let text = `New Contact Message:\n` +
+						   `----------------------\n` +
+						   `Name: ${name}\n` +
+						   `Email: ${email}\n` +
+						   `Phone: ${phone}\n` +
+						   `Problem: ${problem}\n` +
+						   `Message: ${message}`;
+
+				let url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+				window.open(url, "_blank");
+
+				document.getElementById("contactForm").reset();
+			}
+		</script>
+	</body>
+</html>
